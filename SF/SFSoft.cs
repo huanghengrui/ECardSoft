@@ -310,7 +310,7 @@ namespace ECard78
             lblResult.Text = this.Text + Pub.GetResText(formCode, "MsgSuccess", "");
         }
 
-        private bool ReadCard(bool IsWrite)
+        private bool ReadCard(bool IsWrite)   
         {
             CardData10 = "";
             CardDataH = "";
