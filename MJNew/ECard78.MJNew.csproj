@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F914F08-A532-4185-9494-13D5C9128E69}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECard78</RootNamespace>
+    <AssemblyName>ECard78.MJNew</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.QHKS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MJHoliday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJHoliday.Designer.cs">
+      <DependentUpon>MJHoliday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJHolidayEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJHolidayEdit.Designer.cs">
+      <DependentUpon>MJHolidayEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacBJExt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacBJExt.Designer.cs">
+      <DependentUpon>MJMacBJExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacBJExtAdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacBJExtAdv.Designer.cs">
+      <DependentUpon>MJMacBJExtAdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacBJPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacBJPassword.Designer.cs">
+      <DependentUpon>MJMacBJPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacData.Designer.cs">
+      <DependentUpon>MJMacData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacDoorBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacDoorBase.Designer.cs">
+      <DependentUpon>MJMacDoorBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacDoorDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacDoorDown.Designer.cs">
+      <DependentUpon>MJMacDoorDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacDoorLock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacDoorLock.Designer.cs">
+      <DependentUpon>MJMacDoorLock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacDoorLockEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacDoorLockEdit.Designer.cs">
+      <DependentUpon>MJMacDoorLockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacDoorState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacDoorState.Designer.cs">
+      <DependentUpon>MJMacDoorState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacDown.Designer.cs">
+      <DependentUpon>MJMacDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacFirstOpenDoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacFirstOpenDoor.Designer.cs">
+      <DependentUpon>MJMacFirstOpenDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacFirstOpenDoorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacFirstOpenDoorEdit.Designer.cs">
+      <DependentUpon>MJMacFirstOpenDoorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacInfoAddNext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacInfoAddNext.Designer.cs">
+      <DependentUpon>MJMacInfoAddNext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacInOutConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacInOutConfirm.Designer.cs">
+      <DependentUpon>MJMacInOutConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacInOutConfirmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacInOutConfirmEdit.Designer.cs">
+      <DependentUpon>MJMacInOutConfirmEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacMoreCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacMoreCard.Designer.cs">
+      <DependentUpon>MJMacMoreCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacMoreCardEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacMoreCardEdit.Designer.cs">
+      <DependentUpon>MJMacMoreCardEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacOpenDoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacOpenDoor.Designer.cs">
+      <DependentUpon>MJMacOpenDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacPassword.Designer.cs">
+      <DependentUpon>MJMacPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacPasswordEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacPasswordEdit.Designer.cs">
+      <DependentUpon>MJMacPasswordEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacPower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacPower.Designer.cs">
+      <DependentUpon>MJMacPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacPowerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacPowerAdd.Designer.cs">
+      <DependentUpon>MJMacPowerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacReal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacReal.Designer.cs">
+      <DependentUpon>MJMacReal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacTime.Designer.cs">
+      <DependentUpon>MJMacTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacTimeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacTimeAdd.Designer.cs">
+      <DependentUpon>MJMacTimeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacTimeAdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacTimeAdv.Designer.cs">
+      <DependentUpon>MJMacTimeAdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacTimeGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacTimeGroup.Designer.cs">
+      <DependentUpon>MJMacTimeGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacTimeOpenDoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacTimeOpenDoor.Designer.cs">
+      <DependentUpon>MJMacTimeOpenDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacTimeOpenDoorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacTimeOpenDoorEdit.Designer.cs">
+      <DependentUpon>MJMacTimeOpenDoorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacUnReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacUnReturn.Designer.cs">
+      <DependentUpon>MJMacUnReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacUnReturnEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacUnReturnEdit.Designer.cs">
+      <DependentUpon>MJMacUnReturnEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMap.Designer.cs">
+      <DependentUpon>MJMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMapAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMapAdd.Designer.cs">
+      <DependentUpon>MJMapAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMapAddDoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMapAddDoor.Designer.cs">
+      <DependentUpon>MJMapAddDoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJReportAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJReportAlarm.Designer.cs">
+      <DependentUpon>MJReportAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJReportCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJReportCustom.Designer.cs">
+      <DependentUpon>MJReportCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJReportNormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJReportNormal.Designer.cs">
+      <DependentUpon>MJReportNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\ECardSoft\Properties\AssemblyInfo.cs" />
+    <Compile Include="MJMacInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacInfo.Designer.cs">
+      <DependentUpon>MJMacInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacBase.Designer.cs">
+      <DependentUpon>MJMacBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MJMacInfoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MJMacInfoAdd.Designer.cs">
+      <DependentUpon>MJMacInfoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowForms.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base\ECard78.Base.csproj">
+      <Project>{D0B4C866-CBF5-4CA1-8AFD-344D797D6B92}</Project>
+      <Name>ECard78.Base</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MJHoliday.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJHoliday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJHolidayEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJHolidayEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacBJExt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacBJExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacBJExtAdv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacBJExtAdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacBJPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacBJPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacDoorBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacDoorBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacDoorDown.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacDoorDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacDoorLock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacDoorLock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacDoorLockEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacDoorLockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacDoorState.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacDoorState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacDown.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacFirstOpenDoor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacFirstOpenDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacFirstOpenDoorEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacFirstOpenDoorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacInfo.resx">
+      <DependentUpon>MJMacInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacBase.resx">
+      <DependentUpon>MJMacBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacInfoAdd.resx">
+      <DependentUpon>MJMacInfoAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacInfoAddNext.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacInfoAddNext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacInOutConfirm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacInOutConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacInOutConfirmEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacInOutConfirmEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacMoreCard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacMoreCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacMoreCardEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacMoreCardEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacOpenDoor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacOpenDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacPasswordEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacPasswordEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacPower.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacPower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacPowerAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacPowerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacReal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacReal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacTime.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacTimeAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacTimeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacTimeAdv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacTimeAdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacTimeGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacTimeGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacTimeOpenDoor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacTimeOpenDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacTimeOpenDoorEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacTimeOpenDoorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacUnReturn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacUnReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMacUnReturnEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMacUnReturnEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMap.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMapAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMapAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJMapAddDoor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJMapAddDoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJReportAlarm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJReportAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJReportCustom.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJReportCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MJReportNormal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MJReportNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

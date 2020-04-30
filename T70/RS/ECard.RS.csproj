@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{25571810-6C66-4B3F-BF7D-33044C9AFC7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECard78</RootNamespace>
+    <AssemblyName>ECard.RS</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.QHAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Bin\Interop.QHAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.QHKS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ECardSoft\Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSCardOpterDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSCardOpterDetail.Designer.cs">
+      <DependentUpon>RSCardOpterDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSCardOpterTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSCardOpterTotal.Designer.cs">
+      <DependentUpon>RSCardOpterTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSCardType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSCardType.Designer.cs">
+      <DependentUpon>RSCardType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSCardTypeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSCardTypeAdd.Designer.cs">
+      <DependentUpon>RSCardTypeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSDepart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSDepart.Designer.cs">
+      <DependentUpon>RSDepart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSDepartAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSDepartAdd.Designer.cs">
+      <DependentUpon>RSDepartAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSDepositDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSDepositDiscount.Designer.cs">
+      <DependentUpon>RSDepositDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSDepositDiscountAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSDepositDiscountAdd.Designer.cs">
+      <DependentUpon>RSDepositDiscountAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSEmp.Designer.cs">
+      <DependentUpon>RSEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpAdd.Designer.cs">
+      <DependentUpon>RSEmpAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpCardBlack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpCardBlack.Designer.cs">
+      <DependentUpon>RSEmpCardBlack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpCardBlackClear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpCardBlackClear.Designer.cs">
+      <DependentUpon>RSEmpCardBlackClear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSEmpCardFa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSEmpCardFa.Designer.cs">
+      <DependentUpon>RSEmpCardFa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpCardFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpCardFill.Designer.cs">
+      <DependentUpon>RSEmpCardFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpCardFillPhysics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpCardFillPhysics.Designer.cs">
+      <DependentUpon>RSEmpCardFillPhysics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpCardLoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpCardLoss.Designer.cs">
+      <DependentUpon>RSEmpCardLoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSEmpCardModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSEmpCardModify.Designer.cs">
+      <DependentUpon>RSEmpCardModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSEmpCardRetirement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSEmpCardRetirement.Designer.cs">
+      <DependentUpon>RSEmpCardRetirement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSEmpCardChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSEmpCardChange.Designer.cs">
+      <DependentUpon>RSEmpCardChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpChart.Designer.cs">
+      <DependentUpon>RSEmpChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpDelete.Designer.cs">
+      <DependentUpon>RSEmpDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSEmpFace.Designer.cs">
+      <DependentUpon>RSEmpFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\RS\RSReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\RS\RSReport.Designer.cs">
+      <DependentUpon>RSReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowForms.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base\ECard.Base.csproj">
+      <Project>{D0B4C866-CBF5-4CA1-8AFD-344D797D6B92}</Project>
+      <Name>ECard.Base</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSCardOpterDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSCardOpterDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSCardOpterTotal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSCardOpterTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSCardType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSCardType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSCardTypeAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSCardTypeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSDepart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSDepart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSDepartAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSDepartAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSDepositDiscount.resx">
+      <DependentUpon>RSDepositDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSDepositDiscountAdd.resx">
+      <DependentUpon>RSDepositDiscountAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSEmp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSEmpAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSEmpCardBlack.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpCardBlack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSEmpCardBlackClear.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpCardBlackClear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSEmpCardFa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpCardFa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSEmpCardFill.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpCardFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSEmpCardFillPhysics.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpCardFillPhysics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSEmpCardLoss.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpCardLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSEmpCardModify.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpCardModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSEmpCardRetirement.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpCardRetirement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSEmpCardChange.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpCardChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSEmpChart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSEmpChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSEmpDelete.resx">
+      <DependentUpon>RSEmpDelete.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSEmpFace.resx">
+      <DependentUpon>RSEmpFace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\RS\RSReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RSReport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

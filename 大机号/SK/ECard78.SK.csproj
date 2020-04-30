@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB4D1217-0430-4E0E-9D6B-1F961A663922}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECard78</RootNamespace>
+    <AssemblyName>ECard78.SK</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.HSUNFK, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\bin\Interop.HSUNFK.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\ECardSoft\Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SK\SKReportTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SK\SKReportTotal.Designer.cs">
+      <DependentUpon>SKReportTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SK\SKReportDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SK\SKReportDetail.Designer.cs">
+      <DependentUpon>SKReportDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SK\ShowForms.cs" />
+    <Compile Include="..\..\SK\SKDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SK\SKDeposit.Designer.cs">
+      <DependentUpon>SKDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SK\SKDepositMore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SK\SKDepositMore.Designer.cs">
+      <DependentUpon>SKDepositMore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SK\SKMakeCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SK\SKMakeCard.Designer.cs">
+      <DependentUpon>SKMakeCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SK\SKRefundment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SK\SKRefundment.Designer.cs">
+      <DependentUpon>SKRefundment.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base\ECard78.Base.csproj">
+      <Project>{D0B4C866-CBF5-4CA1-8AFD-344D797D6B92}</Project>
+      <Name>ECard78.Base</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SK\SKReportTotal.resx">
+      <DependentUpon>SKReportTotal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SK\SKReportDetail.resx">
+      <DependentUpon>SKReportDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SK\SKDeposit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SKDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SK\SKDepositMore.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SKDepositMore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SK\SKMakeCard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SKMakeCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SK\SKRefundment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SKRefundment.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

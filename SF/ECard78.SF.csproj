@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2216608A-2414-46B8-A97E-B6CB9C32EC52}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECard78</RootNamespace>
+    <AssemblyName>ECard78.SF</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.HSUNFK, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\bin\Interop.HSUNFK.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.QHKS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SFAllowanceClear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFAllowanceClear.designer.cs">
+      <DependentUpon>SFAllowanceClear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFAllowanceDownSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFAllowanceDownSelect.designer.cs">
+      <DependentUpon>SFAllowanceDownSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFBatchAllowance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFBatchAllowance.Designer.cs">
+      <DependentUpon>SFBatchAllowance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFDepositRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFDepositRef.Designer.cs">
+      <DependentUpon>SFDepositRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFDepositType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFDepositType.Designer.cs">
+      <DependentUpon>SFDepositType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFDepositTypeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFDepositTypeAdd.designer.cs">
+      <DependentUpon>SFDepositTypeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacRechargeGift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacRechargeGift.Designer.cs">
+      <DependentUpon>SFMacRechargeGift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMobileCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMobileCheck.designer.cs">
+      <DependentUpon>SFMobileCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFDishCategorys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFDishCategorys.Designer.cs">
+      <DependentUpon>SFDishCategorys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFDishCategorysAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFDishCategorysAdd.Designer.cs">
+      <DependentUpon>SFDishCategorysAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFPlate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFPlate.Designer.cs">
+      <DependentUpon>SFPlate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFRefundmentType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFRefundmentType.Designer.cs">
+      <DependentUpon>SFRefundmentType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFRefundmentTypeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFRefundmentTypeAdd.designer.cs">
+      <DependentUpon>SFRefundmentTypeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacMobileInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacMobileInfo.designer.cs">
+      <DependentUpon>SFMacMobileInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacPrintTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacPrintTitle.designer.cs">
+      <DependentUpon>SFMacPrintTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMobileInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMobileInfo.designer.cs">
+      <DependentUpon>SFMobileInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportAirData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportAirData.designer.cs">
+      <DependentUpon>SFReportAirData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportComposite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportComposite.designer.cs">
+      <DependentUpon>SFReportComposite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportDataOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportDataOrder.Designer.cs">
+      <DependentUpon>SFReportDataOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportReturn.designer.cs">
+      <DependentUpon>SFReportReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportSFMobile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportSFMobile.Designer.cs">
+      <DependentUpon>SFReportSFMobile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportSFMobileError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportSFMobileError.designer.cs">
+      <DependentUpon>SFReportSFMobileError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportSFMobileProdDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportSFMobileProdDetail.designer.cs">
+      <DependentUpon>SFReportSFMobileProdDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportSFMobileProdTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportSFMobileProdTotal.designer.cs">
+      <DependentUpon>SFReportSFMobileProdTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFSoftParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFSoftParam.Designer.cs">
+      <DependentUpon>SFSoftParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFAllowance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFAllowance.Designer.cs">
+      <DependentUpon>SFAllowance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFAllowanceAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFAllowanceAdd.Designer.cs">
+      <DependentUpon>SFAllowanceAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFAllowanceDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFAllowanceDown.Designer.cs">
+      <DependentUpon>SFAllowanceDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFAllowanceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFAllowanceEdit.Designer.cs">
+      <DependentUpon>SFAllowanceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFCheckAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFCheckAccount.Designer.cs">
+      <DependentUpon>SFCheckAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFDeposit.Designer.cs">
+      <DependentUpon>SFDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacReal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacReal.Designer.cs">
+      <DependentUpon>SFMacReal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacData.Designer.cs">
+      <DependentUpon>SFMacData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacDisc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacDisc.Designer.cs">
+      <DependentUpon>SFMacDisc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacLimit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacLimit.Designer.cs">
+      <DependentUpon>SFMacLimit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacLowBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacLowBalance.Designer.cs">
+      <DependentUpon>SFMacLowBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacOpterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacOpterSelect.Designer.cs">
+      <DependentUpon>SFMacOpterSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacOrder.Designer.cs">
+      <DependentUpon>SFMacOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacParam.Designer.cs">
+      <DependentUpon>SFMacParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacInfo.Designer.cs">
+      <DependentUpon>SFMacInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacInfoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacInfoAdd.Designer.cs">
+      <DependentUpon>SFMacInfoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacBase.Designer.cs">
+      <DependentUpon>SFMacBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\ECardSoft\Properties\AssemblyInfo.cs" />
+    <Compile Include="SFAddressAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFAddressAdd.Designer.cs">
+      <DependentUpon>SFAddressAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFAddress.Designer.cs">
+      <DependentUpon>SFAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacProductsSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacProductsSelect.Designer.cs">
+      <DependentUpon>SFMacProductsSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacTiming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacTiming.Designer.cs">
+      <DependentUpon>SFMacTiming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFMacWay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFMacWay.Designer.cs">
+      <DependentUpon>SFMacWay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFOrderManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFOrderManual.Designer.cs">
+      <DependentUpon>SFOrderManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFPrintTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFPrintTitle.Designer.cs">
+      <DependentUpon>SFPrintTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFQueryBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFQueryBalance.Designer.cs">
+      <DependentUpon>SFQueryBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFQueryIncomeCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFQueryIncomeCount.Designer.cs">
+      <DependentUpon>SFQueryIncomeCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFRefundment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFRefundment.Designer.cs">
+      <DependentUpon>SFRefundment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportAlarm.Designer.cs">
+      <DependentUpon>SFReportAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportConsumeCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportConsumeCount.Designer.cs">
+      <DependentUpon>SFReportConsumeCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportCustom.Designer.cs">
+      <DependentUpon>SFReportCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportDepositDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportDepositDetail.Designer.cs">
+      <DependentUpon>SFReportDepositDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportDepositTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportDepositTotal.Designer.cs">
+      <DependentUpon>SFReportDepositTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportError.Designer.cs">
+      <DependentUpon>SFReportError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportLoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportLoss.Designer.cs">
+      <DependentUpon>SFReportLoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportMealCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportMealCount.Designer.cs">
+      <DependentUpon>SFReportMealCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportOrderDetail.Designer.cs">
+      <DependentUpon>SFReportOrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportOrderTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportOrderTotal.Designer.cs">
+      <DependentUpon>SFReportOrderTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportProductDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportProductDetail.Designer.cs">
+      <DependentUpon>SFReportProductDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportProductTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportProductTotal.Designer.cs">
+      <DependentUpon>SFReportProductTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportRefundmentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportRefundmentDetail.Designer.cs">
+      <DependentUpon>SFReportRefundmentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportRefundmentTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportRefundmentTotal.Designer.cs">
+      <DependentUpon>SFReportRefundmentTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportSFDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportSFDetail.Designer.cs">
+      <DependentUpon>SFReportSFDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportSystemCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportSystemCount.Designer.cs">
+      <DependentUpon>SFReportSystemCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowForms.cs" />
+    <Compile Include="SFProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFProducts.Designer.cs">
+      <DependentUpon>SFProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFProductsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFProductsAdd.Designer.cs">
+      <DependentUpon>SFProductsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFSoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFSoft.Designer.cs">
+      <DependentUpon>SFSoft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFReportSFTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFReportSFTotal.Designer.cs">
+      <DependentUpon>SFReportSFTotal.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base\ECard78.Base.csproj">
+      <Project>{D0B4C866-CBF5-4CA1-8AFD-344D797D6B92}</Project>
+      <Name>ECard78.Base</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SFAllowanceClear.resx">
+      <DependentUpon>SFAllowanceClear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFAllowanceDownSelect.resx">
+      <DependentUpon>SFAllowanceDownSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFBatchAllowance.resx">
+      <DependentUpon>SFBatchAllowance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFDepositRef.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFDepositRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFDepositType.resx">
+      <DependentUpon>SFDepositType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFDepositTypeAdd.resx">
+      <DependentUpon>SFDepositTypeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacRechargeGift.resx">
+      <DependentUpon>SFMacRechargeGift.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMobileCheck.resx">
+      <DependentUpon>SFMobileCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFDishCategorys.resx">
+      <DependentUpon>SFDishCategorys.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFDishCategorysAdd.resx">
+      <DependentUpon>SFDishCategorysAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFPlate.resx">
+      <DependentUpon>SFPlate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFRefundmentType.resx">
+      <DependentUpon>SFRefundmentType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFRefundmentTypeAdd.resx">
+      <DependentUpon>SFRefundmentTypeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacMobileInfo.resx">
+      <DependentUpon>SFMacMobileInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacPrintTitle.resx">
+      <DependentUpon>SFMacPrintTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMobileInfo.resx">
+      <DependentUpon>SFMobileInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportAirData.resx">
+      <DependentUpon>SFReportAirData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportComposite.resx">
+      <DependentUpon>SFReportComposite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportDataOrder.resx">
+      <DependentUpon>SFReportDataOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportReturn.resx">
+      <DependentUpon>SFReportReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportSFMobile.resx">
+      <DependentUpon>SFReportSFMobile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportSFMobileError.resx">
+      <DependentUpon>SFReportSFMobileError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportSFMobileProdDetail.resx">
+      <DependentUpon>SFReportSFMobileProdDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportSFMobileProdTotal.resx">
+      <DependentUpon>SFReportSFMobileProdTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFSoftParam.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFSoftParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFAllowance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFAllowance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFAllowanceAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFAllowanceAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFAllowanceDown.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFAllowanceDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFAllowanceEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFAllowanceEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFCheckAccount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFCheckAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFDeposit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacReal.resx">
+      <DependentUpon>SFMacReal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacData.resx">
+      <DependentUpon>SFMacData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacDisc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFMacDisc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacLimit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFMacLimit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacLowBalance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFMacLowBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacOpterSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFMacOpterSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFMacOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacParam.resx">
+      <DependentUpon>SFMacParam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacInfo.resx">
+      <DependentUpon>SFMacInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacInfoAdd.resx">
+      <DependentUpon>SFMacInfoAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacBase.resx">
+      <DependentUpon>SFMacBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFAddressAdd.resx">
+      <DependentUpon>SFAddressAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFAddress.resx">
+      <DependentUpon>SFAddress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacProductsSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFMacProductsSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacTiming.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFMacTiming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFMacWay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFMacWay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFOrderManual.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFOrderManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFPrintTitle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFPrintTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFProducts.resx">
+      <DependentUpon>SFProducts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFProductsAdd.resx">
+      <DependentUpon>SFProductsAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFQueryBalance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFQueryBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFQueryIncomeCount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFQueryIncomeCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFRefundment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFRefundment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportAlarm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportConsumeCount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportConsumeCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportCustom.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportDepositDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportDepositDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportDepositTotal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportDepositTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportError.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportLoss.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportMealCount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportMealCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportOrderDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportOrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportOrderTotal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportOrderTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportProductDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportProductTotal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportProductTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportRefundmentDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportRefundmentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportRefundmentTotal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportRefundmentTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportSFDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportSFDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportSystemCount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SFReportSystemCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFSoft.resx">
+      <DependentUpon>SFSoft.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFReportSFTotal.resx">
+      <DependentUpon>SFReportSFTotal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

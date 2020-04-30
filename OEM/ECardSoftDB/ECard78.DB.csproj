@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D476D84D-2647-4A9B-A113-F3E86D9C2273}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECard78</RootNamespace>
+    <AssemblyName>ECardDB78</AssemblyName>
+    <ApplicationIcon>数据库.ICO</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\ECardSoftDB\DBAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBAuto.Designer.cs">
+      <DependentUpon>DBAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBBack.Designer.cs">
+      <DependentUpon>DBBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBLogin.Designer.cs">
+      <DependentUpon>DBLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBMain.Designer.cs">
+      <DependentUpon>DBMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBPassword.Designer.cs">
+      <DependentUpon>DBPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBRest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBRest.Designer.cs">
+      <DependentUpon>DBRest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBRestPWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBRestPWD.Designer.cs">
+      <DependentUpon>DBRestPWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DBUpdate.Designer.cs">
+      <DependentUpon>DBUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DelAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\DelAccount.Designer.cs">
+      <DependentUpon>DelAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\NewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\ECardSoftDB\NewAccount.Designer.cs">
+      <DependentUpon>NewAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="..\..\ECardSoft\Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\..\ECardSoftDB\DBAuto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\ECardSoftDB\DBBack.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\ECardSoftDB\DBLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\ECardSoftDB\DBMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\ECardSoftDB\DBPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\ECardSoftDB\DBRest.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBRest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\ECardSoftDB\DBRestPWD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBRestPWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\ECardSoftDB\DBUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\ECardSoftDB\DelAccount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DelAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\ECardSoftDB\NewAccount.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base\ECard78.Base.csproj">
+      <Project>{D0B4C866-CBF5-4CA1-8AFD-344D797D6B92}</Project>
+      <Name>ECard78.Base</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="数据库.ICO" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

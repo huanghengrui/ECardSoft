@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C3FC47E-45B4-4F2B-BD92-970574ABE694}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ECard78</RootNamespace>
+    <AssemblyName>ECard78.SEA</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\AxInterop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\AxInterop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.RealSvrOcxTcpLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KQ\obj\Debug\AxInterop.RealSvrOcxTcpLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Bin\Interop.grdesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\Bin\Interop.grproLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.RealSvrOcxTcpLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\bin\Interop.RealSvrOcxTcpLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\ECardSoft\Properties\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaDoorCondition.cs">
+      <Link>SeaDoorCondition.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaDoorCondition.designer.cs">
+      <Link>SeaDoorCondition.designer.cs</Link>
+      <DependentUpon>SeaDoorCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceBase.cs">
+      <Link>SeaFaceBase.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceBase.designer.cs">
+      <Link>SeaFaceBase.designer.cs</Link>
+      <DependentUpon>SeaFaceBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceData.cs">
+      <Link>SeaFaceData.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceData.designer.cs">
+      <Link>SeaFaceData.designer.cs</Link>
+      <DependentUpon>SeaFaceData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceInfo.cs">
+      <Link>SeaFaceInfo.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceInfo.designer.cs">
+      <Link>SeaFaceInfo.designer.cs</Link>
+      <DependentUpon>SeaFaceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceInfoAdd.cs">
+      <Link>SeaFaceInfoAdd.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceInfoAdd.designer.cs">
+      <Link>SeaFaceInfoAdd.designer.cs</Link>
+      <DependentUpon>SeaFaceInfoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceReal.cs">
+      <Link>SeaFaceReal.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceReal.designer.cs">
+      <Link>SeaFaceReal.designer.cs</Link>
+      <DependentUpon>SeaFaceReal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceSelectEmp.cs">
+      <Link>SeaFaceSelectEmp.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaFaceSelectEmp.designer.cs">
+      <Link>SeaFaceSelectEmp.designer.cs</Link>
+      <DependentUpon>SeaFaceSelectEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaHttpServer.cs">
+      <Link>SeaHttpServer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaNetParam.cs">
+      <Link>SeaNetParam.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaNetParam.designer.cs">
+      <Link>SeaNetParam.designer.cs</Link>
+      <DependentUpon>SeaNetParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaOprt.cs">
+      <Link>SeaOprt.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaOprt.designer.cs">
+      <Link>SeaOprt.designer.cs</Link>
+      <DependentUpon>SeaOprt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaPower.cs">
+      <Link>SeaPower.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaPower.designer.cs">
+      <Link>SeaPower.designer.cs</Link>
+      <DependentUpon>SeaPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaPowerAdd.cs">
+      <Link>SeaPowerAdd.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaPowerAdd.designer.cs">
+      <Link>SeaPowerAdd.designer.cs</Link>
+      <DependentUpon>SeaPowerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaPowerEdit.cs">
+      <Link>SeaPowerEdit.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaPowerEdit.designer.cs">
+      <Link>SeaPowerEdit.designer.cs</Link>
+      <DependentUpon>SeaPowerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaRealTimeSet.cs">
+      <Link>SeaRealTimeSet.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaRealTimeSet.designer.cs">
+      <Link>SeaRealTimeSet.designer.cs</Link>
+      <DependentUpon>SeaRealTimeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaReportData.cs">
+      <Link>SeaReportData.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaReportData.designer.cs">
+      <Link>SeaReportData.designer.cs</Link>
+      <DependentUpon>SeaReportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaReportSnapShots.cs">
+      <Link>SeaReportSnapShots.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaReportSnapShots.designer.cs">
+      <Link>SeaReportSnapShots.designer.cs</Link>
+      <DependentUpon>SeaReportSnapShots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaSetSound.cs">
+      <Link>SeaSetSound.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaSetSound.designer.cs">
+      <Link>SeaSetSound.designer.cs</Link>
+      <DependentUpon>SeaSetSound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaTemperature.cs">
+      <Link>SeaTemperature.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaTemperature.designer.cs">
+      <Link>SeaTemperature.designer.cs</Link>
+      <DependentUpon>SeaTemperature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaUserPwd.cs">
+      <Link>SeaUserPwd.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\SEA\SeaUserPwd.designer.cs">
+      <Link>SeaUserPwd.designer.cs</Link>
+      <DependentUpon>SeaUserPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\SEA\ShowForms.cs">
+      <Link>ShowForms.cs</Link>
+    </Compile>
+    <EmbeddedResource Include="..\..\SEA\SeaDoorCondition.resx">
+      <Link>SeaDoorCondition.resx</Link>
+      <DependentUpon>SeaDoorCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaFaceBase.resx">
+      <Link>SeaFaceBase.resx</Link>
+      <DependentUpon>SeaFaceBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaFaceData.resx">
+      <Link>SeaFaceData.resx</Link>
+      <DependentUpon>SeaFaceData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaFaceInfo.resx">
+      <Link>SeaFaceInfo.resx</Link>
+      <DependentUpon>SeaFaceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaFaceInfoAdd.resx">
+      <Link>SeaFaceInfoAdd.resx</Link>
+      <DependentUpon>SeaFaceInfoAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaFaceReal.resx">
+      <Link>SeaFaceReal.resx</Link>
+      <DependentUpon>SeaFaceReal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaFaceSelectEmp.resx">
+      <Link>SeaFaceSelectEmp.resx</Link>
+      <DependentUpon>SeaFaceSelectEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaNetParam.resx">
+      <Link>SeaNetParam.resx</Link>
+      <DependentUpon>SeaNetParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaOprt.resx">
+      <Link>SeaOprt.resx</Link>
+      <DependentUpon>SeaOprt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaPower.resx">
+      <Link>SeaPower.resx</Link>
+      <DependentUpon>SeaPower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaPowerAdd.resx">
+      <Link>SeaPowerAdd.resx</Link>
+      <DependentUpon>SeaPowerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaPowerEdit.resx">
+      <Link>SeaPowerEdit.resx</Link>
+      <DependentUpon>SeaPowerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaRealTimeSet.resx">
+      <Link>SeaRealTimeSet.resx</Link>
+      <DependentUpon>SeaRealTimeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaReportData.resx">
+      <Link>SeaReportData.resx</Link>
+      <DependentUpon>SeaReportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaReportSnapShots.resx">
+      <Link>SeaReportSnapShots.resx</Link>
+      <DependentUpon>SeaReportSnapShots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaSetSound.resx">
+      <Link>SeaSetSound.resx</Link>
+      <DependentUpon>SeaSetSound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaTemperature.resx">
+      <Link>SeaTemperature.resx</Link>
+      <DependentUpon>SeaTemperature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\SEA\SeaUserPwd.resx">
+      <Link>SeaUserPwd.resx</Link>
+      <DependentUpon>SeaUserPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base\ECard78.Base.csproj">
+      <Project>{d0b4c866-cbf5-4ca1-8afd-344d797d6b92}</Project>
+      <Name>ECard78.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

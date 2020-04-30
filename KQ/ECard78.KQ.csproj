@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E42A506-A0CF-45BA-97BC-47646CE46C83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ECard78</RootNamespace>
+    <AssemblyName>ECard78.KQ</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AxInterop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.grdesLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.grproLib, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.QHKS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KQDataAssay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQDataAssay.Designer.cs">
+      <DependentUpon>KQDataAssay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQDataExceptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQDataExceptions.Designer.cs">
+      <DependentUpon>KQDataExceptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQDepWorkType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQDepWorkType.Designer.cs">
+      <DependentUpon>KQDepWorkType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQDepWorkTypeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQDepWorkTypeAdd.Designer.cs">
+      <DependentUpon>KQDepWorkTypeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpDayOff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpDayOff.Designer.cs">
+      <DependentUpon>KQEmpDayOff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpDayOffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpDayOffAdd.Designer.cs">
+      <DependentUpon>KQEmpDayOffAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpOtSure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpOtSure.Designer.cs">
+      <DependentUpon>KQEmpOtSure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpOtSureAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpOtSureAdd.Designer.cs">
+      <DependentUpon>KQEmpOtSureAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpShift.Designer.cs">
+      <DependentUpon>KQEmpShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpShiftBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpShiftBatch.Designer.cs">
+      <DependentUpon>KQEmpShiftBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpShiftView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpShiftView.Designer.cs">
+      <DependentUpon>KQEmpShiftView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpSignCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpSignCard.Designer.cs">
+      <DependentUpon>KQEmpSignCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpSignCardAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpSignCardAdd.Designer.cs">
+      <DependentUpon>KQEmpSignCardAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpSignCardAddA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpSignCardAddA.Designer.cs">
+      <DependentUpon>KQEmpSignCardAddA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpTrip.Designer.cs">
+      <DependentUpon>KQEmpTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpTripAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpTripAdd.Designer.cs">
+      <DependentUpon>KQEmpTripAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpWorkType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpWorkType.Designer.cs">
+      <DependentUpon>KQEmpWorkType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQEmpWorkTypeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQEmpWorkTypeAdd.Designer.cs">
+      <DependentUpon>KQEmpWorkTypeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQFaceBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQFaceBase.designer.cs">
+      <DependentUpon>KQFaceBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQFaceData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQFaceData.designer.cs">
+      <DependentUpon>KQFaceData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQFaceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQFaceInfo.designer.cs">
+      <DependentUpon>KQFaceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQFaceInfoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQFaceInfoAdd.designer.cs">
+      <DependentUpon>KQFaceInfoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQFaceReal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQFaceReal.designer.cs">
+      <DependentUpon>KQFaceReal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQHoliday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQHoliday.Designer.cs">
+      <DependentUpon>KQHoliday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQHolidayAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQHolidayAdd.Designer.cs">
+      <DependentUpon>KQHolidayAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQHolidayAddA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQHolidayAddA.Designer.cs">
+      <DependentUpon>KQHolidayAddA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQMacBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQMacBase.Designer.cs">
+      <DependentUpon>KQMacBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQMacCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQMacCard.Designer.cs">
+      <DependentUpon>KQMacCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQMacData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQMacData.Designer.cs">
+      <DependentUpon>KQMacData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQMacDataFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQMacDataFormat.Designer.cs">
+      <DependentUpon>KQMacDataFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQMacInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQMacInfo.Designer.cs">
+      <DependentUpon>KQMacInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQMacInfoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQMacInfoAdd.Designer.cs">
+      <DependentUpon>KQMacInfoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQMacParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQMacParam.Designer.cs">
+      <DependentUpon>KQMacParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQMacReal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQMacReal.Designer.cs">
+      <DependentUpon>KQMacReal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQMessage.Designer.cs">
+      <DependentUpon>KQMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQPassTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQPassTime.designer.cs">
+      <DependentUpon>KQPassTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQPassTimeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQPassTimeAdd.designer.cs">
+      <DependentUpon>KQPassTimeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQPower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQPower.designer.cs">
+      <DependentUpon>KQPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQPowerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQPowerAdd.designer.cs">
+      <DependentUpon>KQPowerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQPowerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQPowerEdit.designer.cs">
+      <DependentUpon>KQPowerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQReportCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQReportCustom.Designer.cs">
+      <DependentUpon>KQReportCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQReportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQReportData.Designer.cs">
+      <DependentUpon>KQReportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQReportDataFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQReportDataFilter.Designer.cs">
+      <DependentUpon>KQReportDataFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQReportOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQReportOrderDetail.Designer.cs">
+      <DependentUpon>KQReportOrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQReportResultDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQReportResultDay.Designer.cs">
+      <DependentUpon>KQReportResultDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQReportResultDayDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQReportResultDayDetail.Designer.cs">
+      <DependentUpon>KQReportResultDayDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQReportResultMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQReportResultMonth.Designer.cs">
+      <DependentUpon>KQReportResultMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQReportResultTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQReportResultTotal.Designer.cs">
+      <DependentUpon>KQReportResultTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShift.Designer.cs">
+      <DependentUpon>KQShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShiftAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShiftAdd.Designer.cs">
+      <DependentUpon>KQShiftAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShiftAssert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShiftAssert.Designer.cs">
+      <DependentUpon>KQShiftAssert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShiftAssertDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShiftAssertDep.Designer.cs">
+      <DependentUpon>KQShiftAssertDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShiftAssertEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShiftAssertEmp.Designer.cs">
+      <DependentUpon>KQShiftAssertEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShiftCountH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShiftCountH.Designer.cs">
+      <DependentUpon>KQShiftCountH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShiftCountHAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShiftCountHAdd.Designer.cs">
+      <DependentUpon>KQShiftCountHAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShiftPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShiftPackage.Designer.cs">
+      <DependentUpon>KQShiftPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShiftPackageAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShiftPackageAdd.Designer.cs">
+      <DependentUpon>KQShiftPackageAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShiftRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShiftRule.Designer.cs">
+      <DependentUpon>KQShiftRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQShiftRuleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQShiftRuleAdd.Designer.cs">
+      <DependentUpon>KQShiftRuleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQTypeSetDayoff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQTypeSetDayoff.Designer.cs">
+      <DependentUpon>KQTypeSetDayoff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQTypeSetDayoffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQTypeSetDayoffAdd.Designer.cs">
+      <DependentUpon>KQTypeSetDayoffAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQTypeSetOt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQTypeSetOt.Designer.cs">
+      <DependentUpon>KQTypeSetOt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQTypeSetOtAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQTypeSetOtAdd.Designer.cs">
+      <DependentUpon>KQTypeSetOtAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQTypeSetTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQTypeSetTrip.Designer.cs">
+      <DependentUpon>KQTypeSetTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQTypeSetTripAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQTypeSetTripAdd.Designer.cs">
+      <DependentUpon>KQTypeSetTripAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQWeekEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQWeekEnd.Designer.cs">
+      <DependentUpon>KQWeekEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQWeekEndAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQWeekEndAdd.Designer.cs">
+      <DependentUpon>KQWeekEndAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\ECardSoft\Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="KQFaceSelectEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQFaceSelectEmp.Designer.cs">
+      <DependentUpon>KQFaceSelectEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowForms.cs" />
+    <Compile Include="KQDepShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQDepShift.Designer.cs">
+      <DependentUpon>KQDepShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQDepShiftBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQDepShiftBatch.Designer.cs">
+      <DependentUpon>KQDepShiftBatch.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base\ECard78.Base.csproj">
+      <Project>{D0B4C866-CBF5-4CA1-8AFD-344D797D6B92}</Project>
+      <Name>ECard78.Base</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="KQDataAssay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQDataAssay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQDataExceptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQDataExceptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQDepWorkType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQDepWorkType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQDepWorkTypeAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQDepWorkTypeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpDayOff.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpDayOff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpDayOffAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpDayOffAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpOtSure.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpOtSure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpOtSureAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpOtSureAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpShift.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpShiftBatch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpShiftBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpShiftView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpShiftView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpSignCard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpSignCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpSignCardAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpSignCardAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpSignCardAddA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpSignCardAddA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpTrip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpTripAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpTripAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpWorkType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpWorkType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQEmpWorkTypeAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQEmpWorkTypeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQFaceBase.resx">
+      <DependentUpon>KQFaceBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQFaceData.resx">
+      <DependentUpon>KQFaceData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQFaceInfo.resx">
+      <DependentUpon>KQFaceInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQFaceInfoAdd.resx">
+      <DependentUpon>KQFaceInfoAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQFaceReal.resx">
+      <DependentUpon>KQFaceReal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQHoliday.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQHoliday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQHolidayAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQHolidayAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQHolidayAddA.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQHolidayAddA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQMacBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQMacBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQMacCard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQMacCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQMacData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQMacData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQMacDataFormat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQMacDataFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQMacInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQMacInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQMacInfoAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQMacInfoAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQMacParam.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQMacParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQMacReal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQMacReal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQMessage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQPassTime.resx">
+      <DependentUpon>KQPassTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQPassTimeAdd.resx">
+      <DependentUpon>KQPassTimeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQPower.resx">
+      <DependentUpon>KQPower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQPowerAdd.resx">
+      <DependentUpon>KQPowerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQPowerEdit.resx">
+      <DependentUpon>KQPowerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQReportCustom.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQReportCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQReportData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQReportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQReportDataFilter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQReportDataFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQReportOrderDetail.resx">
+      <DependentUpon>KQReportOrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQReportResultDay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQReportResultDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQReportResultDayDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQReportResultDayDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQReportResultMonth.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQReportResultMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQReportResultTotal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQReportResultTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShift.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShiftAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShiftAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShiftAssert.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShiftAssert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShiftAssertDep.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShiftAssertDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShiftAssertEmp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShiftAssertEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShiftCountH.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShiftCountH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShiftCountHAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShiftCountHAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShiftPackage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShiftPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShiftPackageAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShiftPackageAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShiftRule.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShiftRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQShiftRuleAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQShiftRuleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQTypeSetDayoff.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQTypeSetDayoff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQTypeSetDayoffAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQTypeSetDayoffAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQTypeSetOt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQTypeSetOt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQTypeSetOtAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQTypeSetOtAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQTypeSetTrip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQTypeSetTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQTypeSetTripAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQTypeSetTripAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQWeekEnd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQWeekEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQWeekEndAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KQWeekEndAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQDepShift.resx">
+      <DependentUpon>KQDepShift.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQDepShiftBatch.resx">
+      <DependentUpon>KQDepShiftBatch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQFaceSelectEmp.resx">
+      <DependentUpon>KQFaceSelectEmp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxRealSvrOcxTcpLib">
+      <Guid>{86683A0C-A3FA-4412-B044-51B918DBEE5C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="RealSvrOcxTcpLib">
+      <Guid>{86683A0C-A3FA-4412-B044-51B918DBEE5C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

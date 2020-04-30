@@ -1,0 +1,7 @@
+IF EXISTS (SELECT * FROM sysobjects WHERE NAME='VSEA_MacInfoFace') DROP VIEW VSEA_MacInfoFace
+GO
+CREATE VIEW VSEA_MacInfoFace WITH ENCRYPTION
+AS
+  SELECT CAST(0 AS bit) AS SelectCheck,'' AS MacStatus,*
+    FROM SEA_MacInfoFace
+GO
